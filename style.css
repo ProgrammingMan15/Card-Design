@@ -1,0 +1,89 @@
+/* 
+mainbg:#0d6efd 
+card:#3c04dc
+cardshadow:rgba(0, 0, 0, 0.3) 0px 19px 38px,
+           rgba(0, 0, 0, 0.22) 0px 15px 12px
+icon:#808e9b  #fa8231  #45aaf2  #4b7bec
+text: Martin Scorsese  David Fincher 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d6efd ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card{
+    width: 350px;
+    height: 400px;
+    background-color: #3c04dc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.card ul{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+.card ul li{
+    list-style:none;
+    margin-top: 15px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.card ul li i{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.bxl-facebook{
+    background-color: #808e9b;
+}
+.bxl-instagram{
+    background-color: #fa8231;
+}
+.bxl-twitter{
+    background-color:#45aaf2 ;
+}
+.bxl-linkedin{
+    background-color: #4b7bec;
+}
+.card h1{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+.card:hover{
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+}
+.card:hover ul li{
+    opacity: 1;
+}
